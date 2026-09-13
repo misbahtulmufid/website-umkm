@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: #2f2118;
-  background: #f6f0e8;
+  background: #f9f8f8;
   font-family: Arial, sans-serif;
 }
 
@@ -13,8 +13,8 @@ body {
 
 .hero {
   padding: 36px;
-  color: white;
-  background: #6f3b1f;
+  color: rgb(8, 79, 38);
+  background: #e4ae588e;
   border-radius: 24px;
 }
 
