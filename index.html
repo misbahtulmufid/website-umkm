@@ -7,27 +7,52 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="#profil">Kontak Singkat</a>
+    </nav>
     <main class="page">
-      <section class="hero">
+      <header>
+      <section class="hero" id="beranda">
         <p class="eyebrow">UMKM Batang</p>
         <h1>Kopi Tani Laras</h1>
         <p>Aromanya Khas, rasanya autentik cocok menemani pagi maupun ngobrol santai bersama keluarga.</p>
         <button id="promoButton" type="button">Lihat promo hari ini</button>
       </section>
+    </header>
 
-      <section aria-labelledby="produk-title">
-        <h2 id="produk-title">Produk Unggulan</h2>
+    <section aria-labelledby="produk-title">
+        <h2 id="produk-title">Biji Kopi Premium</h2>
+        <img class="product-images" src="images/kopi.jpg" alt="Biji kopi Tani Laras">
         <ul class="products">
-          <li>Kopi Tubruk Robusta Natural - Rp20.000</li>
-          <li>Kopi Tubruk Robusta Wine - Rp22.000</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="info-title">
-      <h2 id="info-title">Jam Buka dan Lokasi</h2>
-      <p><strong>Jam Buka:</strong> Senin - Minggu, 09.00 - 21.00 WIB</p>
-      <p><strong>Lokasi:</strong> Batang, Jawa Tengah</p>
+        <li>
+          <h3>Kopi Tubruk Robusta Natural</h3>
+          <p>Rp20.000</p>
+        </li>
+        <li>
+          <h3>Kopi Tubruk Robusta Wine</h3>
+          <p>Rp22.000</p>
+        </li>
+      </ul>
     </section>
+
+    <section aria-labelledby="info-title">
+    <h2 id="info-title">Jam Buka dan Lokasi</h2>
+    <p><strong>Jam Buka:</strong> Senin - Minggu, 09.00 - 21.00 WIB</p>
+    <p><strong>Lokasi:</strong> Batang, Jawa Tengah</p>
+    </section>
+
+<section id="profil" aria-labelledby="kontak-title">
+  <h2 id="kontak-title">Kontak Singkat</h2>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/6281234567890">Hubungi Kopi Tani Laras melalui WhatsApp</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Kopi Tani Laras - Batang, Jawa Tengah</p>
+</footer>
     </main>
     <script src="js/script.js"></script>
   </body>

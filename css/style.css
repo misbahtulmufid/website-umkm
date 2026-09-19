@@ -37,3 +37,16 @@ button {
   border: 0;
   border-radius: 999px;
 }
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.product-images {
+  width: 280px;
+  height: auto;
+  border-radius: 25px;
+  margin: 10px;
+}
