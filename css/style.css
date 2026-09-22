@@ -50,3 +50,78 @@ nav {
   border-radius: 25px;
   margin: 10px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dccbbc;
+}
+
+img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.crop-top {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 16px;
+}
+
+figure {
+  margin: 0 0 24px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: #6b5b52;
+}
+
+section {
+  background: #ffffff;
+  padding: 24px;
+  margin: 24px 0;
+  border: 1px solid #dccbbc;
+  border-radius: 16px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.products {
+  padding-left: 20px;
+}
+
+.products li {
+  margin-bottom: 18px;
+}
+
+.products h3 {
+  margin-bottom: 6px;
+}
+
+figure {
+  margin: 0 0 24px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: #6b5b52;
+}

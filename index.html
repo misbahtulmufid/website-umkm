@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#beranda">Beranda</a>
-      <a href="tentang.html">Tentang Kami</a>
-      <a href="#profil">Kontak Singkat</a>
-    </nav>
+  <nav class="nav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="galeri.html">Galeri</a>
+  </nav>
     <main class="page">
       <header>
       <section class="hero" id="beranda">
@@ -24,7 +25,10 @@
 
     <section aria-labelledby="produk-title">
         <h2 id="produk-title">Biji Kopi Premium</h2>
-        <img class="product-images" src="images/kopi.jpg" alt="Biji kopi Tani Laras">
+        <figure>
+          <img class="product-images" src="images/kopi.jpg" alt="Biji kopi Tani Laras">
+          <figcaption>Biji kopi Tani Laras</figcaption>
+        </figure>
         <ul class="products">
         <li>
           <h3>Kopi Tubruk Robusta Natural</h3>
@@ -45,6 +49,7 @@
 
 <section id="profil" aria-labelledby="kontak-title">
   <h2 id="kontak-title">Kontak Singkat</h2>
+  </p>
     <strong>WhatsApp:</strong>
     <a href="https://wa.me/6281234567890">Hubungi Kopi Tani Laras melalui WhatsApp</a>
   </p>
