@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kontak - Kopi Tani Laras</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/form.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="galeri.html">Galeri</a>
+      <a aria-current="page" href="kontak.html">Kontak</a>
+    </nav>
+
+    <main class="page">
+      <h1>Kontak Kopi Tani Laras</h1>
+
+      <p>
+        Silakan kirim pertanyaan tentang produk, pesanan, atau kerja sama.
+      </p>
+
+      <form id="form-kontak" action="#" method="post">
+
+        <div class="field">
+          <label for="nama">Nama lengkap</label>
+          <input
+            id="nama"
+            name="nama"
+            type="text"
+            autocomplete="name"
+            required
+            minlength="3"
+          />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="telepon">Nomor WhatsApp</label>
+          <input
+            id="telepon"
+            name="telepon"
+            type="tel"
+            autocomplete="tel"
+          />
+        </div>
+
+        <fieldset>
+          <legend>Preferensi waktu konfirmasi</legend>
+
+          <div class="field">
+            <input
+              id="pagi"
+              name="waktu"
+              type="radio"
+              value="Pagi"
+            />
+            <label for="pagi">Pagi</label>
+          </div>
+
+          <div class="field">
+            <input
+              id="siang"
+              name="waktu"
+              type="radio"
+              value="Siang"
+            />
+            <label for="siang">Siang</label>
+          </div>
+
+          <div class="field">
+            <input
+              id="sore"
+              name="waktu"
+              type="radio"
+              value="Sore"
+            />
+            <label for="sore">Sore</label>
+          </div>
+
+          <div class="field">
+            <input
+              id="malam"
+              name="waktu"
+              type="radio"
+              value="Malam"
+            />
+            <label for="malam">Malam</label>
+          </div>
+        </fieldset>
+
+       <div class="field">
+        <label for="paket">Paket dan ukuran</label>
+        <select id="paket" name="paket" required>
+          <option value="">-- Pilih paket dan ukuran --</option>
+          <option value="Kopi Tubruk Robusta Natural - 250 gram">
+            Kopi Tubruk Robusta Natural - 250 gram
+          </option>
+          <option value="Kopi Tubruk Robusta Natural - 500 gram">
+            Kopi Tubruk Robusta Natural - 500 gram
+          </option>
+          <option value="Kopi Tubruk Robusta Wine - 250 gram">
+            Kopi Tubruk Robusta Wine - 250 gram
+          </option>
+          <option value="Kopi Tubruk Robusta Wine - 500 gram">
+            Kopi Tubruk Robusta Wine - 500 gram
+          </option>
+        </select>
+      </div>
+
+        <fieldset>
+          <legend>Topik yang ingin ditanyakan</legend>
+
+          <div class="field">
+            <input
+              id="produk"
+              name="topik"
+              type="radio"
+              value="Produk"
+              required
+            />
+            <label for="produk">Produk</label>
+          </div>
+
+          <div class="field">
+            <input
+              id="pesanan"
+              name="topik"
+              type="radio"
+              value="Pesanan"
+            />
+            <label for="pesanan">Pesanan</label>
+          </div>
+
+          <div class="field">
+            <input
+              id="kerja-sama"
+              name="topik"
+              type="radio"
+              value="Kerja sama"
+            />
+            <label for="kerja-sama">Kerja sama</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            required
+            minlength="10"
+          ></textarea>
+        </div>
+
+        <button type="submit">Tampilkan Preview</button>
+
+      </form>
+
+      <section aria-labelledby="preview-title">
+        <h2 id="preview-title">Preview Data</h2>
+
+        <pre id="preview-form" aria-live="polite">Data form akan muncul setelah tombol dikirim.</pre>
+      </section>
+    </main>
+  </body>
+</html>

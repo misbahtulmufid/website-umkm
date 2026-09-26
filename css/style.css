@@ -3,19 +3,66 @@ body {
   color: #2f2118;
   background: #f9f8f8;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page {
+  width: 100%;
   max-width: 920px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 32px 20px;
+  flex: 1;
 }
 
 .hero {
   padding: 36px;
-  color: rgb(8, 79, 38);
-  background: #e4ae588e;
+  color: rgb(228, 226, 219);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  box-shadow: none;
   border-radius: 24px;
+  min-height: 240px;
+}
+
+.tentang-gambar {
+  padding: 0;
+  margin: 24px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.tentang-gambar img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+}
+
+.tentang-isi {
+  margin-top: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+   text-align: justify;
+}
+
+.tentang-isi h1 {
+  margin-top: 0;
+}
+
+#promoButton {
+  margin-top: 50px;
 }
 
 .eyebrow {
@@ -25,7 +72,15 @@ body {
 }
 
 .products {
-  padding-left: 1.2rem;
+  padding-left: 20px;
+}
+
+.products li {
+  margin-bottom: 8px;
+}
+
+.products h3 {
+  margin-bottom: 6px;
 }
 
 button {
@@ -97,7 +152,7 @@ section {
   background: #ffffff;
   padding: 24px;
   margin: 24px 0;
-  border: 1px solid #dccbbc;
+  border: 4px solid #dccbbc;
   border-radius: 16px;
 }
 
@@ -105,23 +160,44 @@ section h2 {
   margin-top: 0;
 }
 
-.products {
-  padding-left: 20px;
+.field {
+  margin-bottom: 16px;
 }
 
-.products li {
-  margin-bottom: 18px;
-}
-
-.products h3 {
+.field label {
+  display: block;
   margin-bottom: 6px;
 }
 
-figure {
-  margin: 0 0 24px;
+fieldset {
+  margin: 0 0 16px;
 }
 
-figcaption {
-  margin-top: 8px;
-  color: #6b5b52;
+#preview-form {
+  padding: 16px;
+  white-space: pre-wrap;
+  background: white;
+  border: 1px solid #dccbbc;
+}
+
+#pesan {
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 24px 20px;
+  text-align: center;
+  color: #f9f8f8;
+  background: #2f2118;
+}
+
+.footer p {
+  margin: 0;
 }
