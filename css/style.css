@@ -1,3 +1,4 @@
+
 :root {
   /* Warna */
   --color-primary: #6f3b1f;
@@ -48,26 +49,33 @@ body {
 .page {
   width: 100%;
   max-width: 920px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding: var(--space-4) 20px;
   flex: 1;
 }
 
 .hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-4);
+  align-items: center;
   padding: 36px;
   color: rgb(228, 226, 219);
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../images/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--color-primary);
   border: none;
   outline: none;
   box-shadow: none;
   border-radius: var(--radius-lg);
   min-height: 240px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  justify-self: end;
+  border-radius: var(--radius-md);
 }
 
 h1,
@@ -97,7 +105,7 @@ h3 {
   padding: var(--space-4);
   background: var(--color-surface);
   border-radius: var(--radius-md);
-   text-align: justify;
+  text-align: justify;
 }
 
 .tentang-isi h1 {
@@ -136,35 +144,73 @@ button {
   border-radius: var(--radius-pill);
 }
 
-nav {
+.nav {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   width: 100%;
-  box-sizing: border-box;
   margin: 0;
   padding: var(--space-2) 4%;
-
-  text-align: right;
   background: #f7f0e5;
   border-bottom: 1px solid var(--color-border);
-  border-radius: 0;
 }
 
-nav a {
+.nav a {
   display: inline-block;
   margin: 0 var(--space-1);
   padding: var(--space-1) var(--space-2);
-
   color: var(--color-text);
   text-decoration: none;
   border-radius: var(--radius-sm);
 }
 
-nav a:visited {
+.nav a:visited {
   color: var(--color-text);
 }
 
-nav a:hover {
+.nav a:hover {
   color: var(--color-primary);
   background: #ead9c5;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+}
+
+.product-badge {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  padding: 0.25rem var(--space-2);
+  color: var(--color-primary-strong);
+  font-size: 0.875rem;
+  font-weight: 800;
+  background: #fef3c7;
+  border-radius: var(--radius-pill);
+}
+
+.card-actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.product-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .product-images {
@@ -285,7 +331,6 @@ fieldset {
 
 .footer {
   width: 100%;
-  box-sizing: border-box;
   margin-top: 0;
   padding: var(--space-3) 20px;
   text-align: center;
@@ -295,4 +340,79 @@ fieldset {
 
 .footer p {
   margin: 0;
+}
+
+.waktu-pilihan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.waktu-pilihan legend {
+  width: 100%;
+}
+
+.waktu-pilihan .field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: 0;
+}
+
+.topik-pilihan .field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+.topik-pilihan .field label {
+  margin-bottom: 0;
+}
+
+.galeri-page {
+  max-width: 1100px;
+}
+
+.galeri-page .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-items: start;
+}
+
+.galeri-page .media-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.galeri-page .media-card img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+}
+
+.galeri-page .media-card figcaption {
+  max-width: 320px;
+  margin: 8px auto 0;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.galeri-page audio {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-actions {
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--space-2);
 }
