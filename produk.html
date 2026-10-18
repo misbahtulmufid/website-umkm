@@ -8,13 +8,21 @@
   </head>
 
   <body>
-  <nav class="nav" aria-label="Navigasi utama">
+  
+<nav class="nav" aria-label="Navigasi utama">
+  <a href="index.html" class="brand">
+    <img src="images/logo.png" alt="Logo Kopi Tani Laras" />
+  </a>
+
+  <div class="nav-links">
     <a href="index.html">Beranda</a>
     <a href="tentang.html">Tentang Kami</a>
     <a href="produk.html">Produk</a>
     <a href="galeri.html">Galeri</a>
     <a href="kontak.html">Kontak</a>
-  </nav>
+  </div>
+</nav>
+
     <main class="page">
       <h1>Produk Kopi Tani Laras</h1>
       <p>Pilih produk kopi sesuai kebutuhan dan selera.</p>
@@ -57,8 +65,17 @@
     <section aria-labelledby="harga-title">
         <h2 id="harga-title">Daftar Harga</h2>
 
+
+<div
+  class="table-scroll"
+  role="region"
+  aria-labelledby="daftar-harga-caption"
+  tabindex="0"
+>
   <table>
-    <caption>Daftar harga produk Kopi Tani Laras</caption>
+    <caption id="daftar-harga-caption">
+      Daftar harga produk Kopi Tani Laras
+    </caption>
 
     <thead>
       <tr>
@@ -74,26 +91,24 @@
         <td>250 gram</td>
         <td>Rp20.000</td>
       </tr>
-
       <tr>
         <th scope="row">Kopi Tubruk Robusta Natural</th>
         <td>500 gram</td>
         <td>Rp40.000</td>
       </tr>
-
       <tr>
         <th scope="row">Kopi Tubruk Robusta Wine</th>
         <td>250 gram</td>
         <td>Rp22.000</td>
       </tr>
-
-        <tr>
-            <th scope="row">Kopi Tubruk Robusta Wine</th>
-            <td>500 gram</td>
-            <td>Rp44.000</td>
-        </tr>
+      <tr>
+        <th scope="row">Kopi Tubruk Robusta Wine</th>
+        <td>500 gram</td>
+        <td>Rp44.000</td>
+      </tr>
     </tbody>
   </table>
+</div>
 </section>
     </main>
 <footer class="footer">

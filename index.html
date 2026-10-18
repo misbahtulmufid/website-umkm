@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+  
   <nav class="nav" aria-label="Navigasi utama">
-    <a href="index.html">Beranda</a>
-    <a href="tentang.html">Tentang Kami</a>
-    <a href="produk.html">Produk</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="kontak.html">Kontak</a>
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Logo Kopi Tani Laras" />
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
   </nav>
+
     <main class="page">
   <header>
     <section class="hero" id="beranda">
@@ -24,14 +32,24 @@
         <button id="promoButton" type="button">Lihat promo hari ini</button>
       </div>
 
-      <img class="hero-image" src="images/hero.png" alt="Kopi Tani Laras">
+      <img
+        class="hero-image"
+        src="images/hero.png"
+        width="640"
+        height="360"
+        alt="Kopi Tani Laras">
     </section>
   </header>  
 
     <section aria-labelledby="produk-title">
         <h2 id="produk-title">Biji Kopi Premium</h2>
         <figure>
-          <img class="product-images" src="images/kopi.jpg" alt="Biji kopi Tani Laras">
+          <img
+            class="product-images"
+            src="images/kopi.jpg"
+            width="640"
+            height="360"
+            alt="Biji kopi Tani Laras">
           <figcaption>Biji kopi Tani Laras</figcaption>
         </figure>
         <ul class="products">
@@ -53,11 +71,13 @@
     </section>
 
     <section id="profil" aria-labelledby="kontak-title">
-      <h2 id="kontak-title">Kontak Singkat</h2>
-      </p>
-        <strong>WhatsApp:</strong>
-        <a href="https://wa.me/6281234567890">Hubungi Kopi Tani Laras melalui WhatsApp</a>
-      </p>
+    <h2 id="kontak-title">Kontak Singkat</h2>
+    <p>
+      <strong>WhatsApp:</strong>
+      <a href="https://wa.me/6281234567890">
+        Hubungi Kopi Tani Laras melalui WhatsApp
+      </a>
+    </p>
     </section>
     </main>
     <footer class="footer">
