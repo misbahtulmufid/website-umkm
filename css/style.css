@@ -626,3 +626,50 @@ fieldset {
     padding: 6px 4px;
   }
 }
+
+/* Tampilan produk dari JavaScript */
+.js-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.js-product-card {
+  padding: 20px;
+  border: 1px solid #e2d2c2;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.js-product-card h3 {
+  margin-top: 0;
+  color: #2f2118;
+}
+
+.js-product-card .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.stock-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.stock-badge.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stock-badge.empty {
+  background: #fee2e2;
+  color: #991b1b;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Produk Kopi Tani Laras - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
   </head>
 
   <body>
@@ -41,47 +42,70 @@
         <ul>
          <li>Robusta Natural</li>
          <li>Robusta Wine</li>
+         <li>Arabika</li>
         </ul>
     </section>
     <section aria-labelledby="produk-pilihan-title">
       <h2 id="produk-pilihan-title">Produk Pilihan</h2>
 
       <div class="product-grid">
-      <article class="product-card">
-      <span class="product-badge">Best Seller</span>
+        <article class="product-card">
+          <span class="product-badge">Unggulan</span>
 
-      <h3>Kopi Tubruk Robusta Natural</h3>
-      <p>Kopi robusta dengan karakter rasa yang khas dan autentik.</p>
+          <h3>Kopi Tubruk Robusta Natural</h3>
+          <p>Kopi robusta dengan karakter rasa yang khas dan autentik.</p>
 
-      <div class="card-actions">
-        <strong>Rp20.000</strong>
-        <button type="button">Pilih Produk</button>
-      </div>
-    </article>
+          <div class="card-actions">
+            <strong>Rp20.000</strong>
+            <button type="button">Pilih Produk</button>
+          </div>
+        </article>
 
-    <article class="product-card">
-      <span class="product-badge">Pilihan</span>
+        <article class="product-card">
+          <span class="product-badge">Pilihan</span>
 
-      <h3>Kopi Tubruk Robusta Wine</h3>
-      <p>Kopi robusta dengan cita rasa unik untuk dinikmati sehari-hari.</p>
+          <h3>Kopi Tubruk Robusta Wine</h3>
+          <p>Kopi robusta dengan cita rasa unik untuk dinikmati sehari-hari.</p>
 
-      <div class="card-actions">
-        <strong>Rp22.000</strong>
-        <button type="button">Pilih Produk</button>
-      </div>
+          <div class="card-actions">
+            <strong>Rp22.000</strong>
+            <button type="button">Pilih Produk</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">Paket Hemat</span>
+
+          <h3>Paket Komplit Kopi Tani Laras</h3>
+          <p>Berisi tiga varian kopi: Robusta Natural, Robusta Wine, dan Arabika, masing-masing 100 gram.</p>
+
+          <div class="card-actions">
+            <strong>Rp45.000</strong>
+            <button type="button">Pilih Produk</button>
+          </div>
         </article>
       </div>
+    </section>
+    <section class="section" aria-labelledby="produk-dinamis-title">
+      <div class="section-header">
+        <p class="eyebrow">Pilihan Kopi</p>
+        <h2 id="produk-dinamis-title">Produk Kopi Tani Laras</h2>
+        <p id="produk-ringkasan">
+          Temukan pilihan kopi berkualitas dari Kopi Tani Laras.
+        </p>
+      </div>
+
+      <div id="produk-dinamis" class="js-product-grid"></div>
     </section>
     <section aria-labelledby="harga-title">
         <h2 id="harga-title">Daftar Harga</h2>
 
-
-<div
-  class="table-scroll"
-  role="region"
-  aria-labelledby="daftar-harga-caption"
-  tabindex="0"
->
+      <div
+        class="table-scroll"
+        role="region"
+        aria-labelledby="daftar-harga-caption"
+        tabindex="0"
+      >
   <table>
     <caption id="daftar-harga-caption">
       Daftar harga produk Kopi Tani Laras
@@ -115,6 +139,21 @@
         <th scope="row">Kopi Tubruk Robusta Wine</th>
         <td>500 gram</td>
         <td>Rp44.000</td>
+      </tr>
+      <tr>
+        <th scope="row">Kopi Arabika</th>
+        <td>250 gram</td>
+        <td>Rp50.000</td>
+      </tr>
+        <tr>
+        <th scope="row">Kopi Arabika</th>
+        <td>500 gram</td>
+        <td>Rp100.000</td>
+      </tr>
+      <tr>
+        <th scope="row">Paket Komplit Kopi Tani Laras</th>
+        <td>3 x 100 gram</td>
+        <td>Rp45.000</td>
       </tr>
     </tbody>
   </table>
