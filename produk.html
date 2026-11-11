@@ -86,18 +86,41 @@
         </article>
       </div>
     </section>
-    <section class="section" aria-labelledby="produk-dinamis-title">
+   <section class="section" aria-labelledby="produk-dinamis-title">
       <div class="section-header">
         <p class="eyebrow">Pilihan Kopi</p>
-        <h2 id="produk-dinamis-title">Produk Kopi Tani Laras</h2>
+
+        <h2 id="produk-dinamis-title">
+          Produk Kopi Tani Laras
+        </h2>
+
         <p id="produk-ringkasan">
           Temukan pilihan kopi berkualitas dari Kopi Tani Laras.
         </p>
 
         <p id="produk-unggulan">
-          Produk unggulan akan ditentukan melalui JavaScript.
+          Nikmati pilihan kopi dan paket unggulan dari Kopi Tani Laras.
+        </p>
+
+        <p id="produk-status" aria-live="polite">
+          Memuat produk...
         </p>
       </div>
+
+      <div class="filter-bar" aria-label="Filter kategori produk">
+        <button type="button" class="filter-button is-active"
+          data-filter="Semua">Semua</button>
+
+        <button type="button" class="filter-button"
+          data-filter="Kopi">Kopi</button>
+
+        <button type="button" class="filter-button"
+          data-filter="Bundling">Bundling</button>
+
+        <button type="button" class="filter-button"
+          data-filter="Aksesori">Aksesoris</button>
+      </div>
+
       <div id="produk-dinamis" class="js-product-grid"></div>
     </section>
     <section aria-labelledby="harga-title">

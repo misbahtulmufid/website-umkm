@@ -627,7 +627,6 @@ fieldset {
   }
 }
 
-/* Tampilan produk dari JavaScript */
 .js-product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -672,4 +671,45 @@ fieldset {
 .stock-badge.empty {
   background: #fee2e2;
   color: #991b1b;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem 1.5rem;
+}
+
+.filter-button {
+  border: 1px solid #d9b98c;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #2f2118;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: #6f3b1f;
+  outline: 3px solid rgb(111 59 31 / 20%);
+  outline-offset: 2px;
+}
+
+.filter-button.is-active {
+  background: #6f3b1f;
+  border-color: #6f3b1f;
+  color: #ffffff;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  border: 1px dashed #d9b98c;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #f6f0e8;
+  color: #6f3b1f;
+  text-align: center;
 }
